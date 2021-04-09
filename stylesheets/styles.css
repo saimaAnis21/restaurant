@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+
+#content {
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 900px;
+    padding-top: 100px;
+     
+}
+
+#container {
+    color: white;
+    background-color: black;
+    width: 60%;    
+    margin-left: 150px;
+    padding: 20px;
+    opacity: 0.8;
+    
+}
+
+/* Style the tab */
+#tab {
+    overflow: hidden;
+    /*border: 1px solid white;*/
+    /*background-color:black;*/
+    width: 30%;
+    margin-left: 150px;
+    height: 50px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+#tab button {
+    background-color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+  }
+
+  .tab button:hover {
+    background-color: black;
+    color:white;
+  }
+
+
+.flex-display{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pb-10{
+  padding-bottom: 20px;
+}
