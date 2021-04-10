@@ -23,10 +23,10 @@ body {
 /* Style the tab */
 #tab {
   overflow: hidden;
-  
-  /*border: 1px solid white;*/
 
-  /*background-color:black;*/
+  /* border: 1px solid white; */
+
+  /* background-color:black; */
 
   width: 30%;
   margin-left: 150px;
@@ -50,7 +50,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 
 .flex-display {
   display: flex;
