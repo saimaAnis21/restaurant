@@ -1,6 +1,7 @@
 import {tabsButton} from './tabs';
 import {introduction} from './intro';
 import {menuitems} from './menu';
+import {contactUs} from './contact';
 
 let contentdiv = document.getElementById("content");
 
@@ -48,6 +49,7 @@ function setstyle(btn){
 
 //intro button
 btns[0].addEventListener("click", function(){
+    containerdiv.innerHTML="";
     containerdiv.appendChild(introdiv);
     setstyle(btns[0]);
     resetstyle(0);
@@ -66,6 +68,8 @@ btns[0].addEventListener("click", function(){
 //contact button
   btns[2].addEventListener("click", function(){
     containerdiv.innerHTML="";
+    let cntct = contactUs();
+    containerdiv.appendChild(cntct);
     setstyle(btns[2]);
     resetstyle(2);
     
