@@ -23,14 +23,22 @@ body {
 /* Style the tab */
 #tab {
   overflow: hidden;
+  
   /*border: 1px solid white;*/
+
   /*background-color:black;*/
+
   width: 30%;
   margin-left: 150px;
   height: 50px;
 }
 
 /* Style the buttons that are used to open the tab content */
+.tab button:hover {
+  background-color: black;
+  color: white;
+}
+
 #tab button {
   background-color: white;
   float: left;
@@ -43,10 +51,6 @@ body {
   color: black;
 }
 
-.tab button:hover {
-  background-color: black;
-  color: white;
-}
 
 .flex-display {
   display: flex;
