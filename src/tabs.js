@@ -1,18 +1,17 @@
 
-function tabsButton(){
+function tabsButton() {
+  const btns = [];
 
-    let btns=[];
+  btns[0] = document.createElement('button');
+  btns[0].innerText = 'Intro';
 
-    btns[0] = document.createElement("button");
-    btns[0].innerText="Intro";    
+  btns[1] = document.createElement('button');
+  btns[1].innerText = 'Menu';
 
-    btns[1] = document.createElement("button");
-    btns[1].innerText="Menu";    
+  btns[2] = document.createElement('button');
+  btns[2].innerText = 'Contact Us';
 
-    btns[2] = document.createElement("button");
-    btns[2].innerText="Contact Us";    
-
-    return btns;
+  return btns;
 }
 
-export {tabsButton};
+export default tabsButton;

@@ -1,77 +1,70 @@
-import {tabsButton} from './tabs';
-import {introduction} from './intro';
-import {menuitems} from './menu';
-import {contactUs} from './contact';
+import tabsButton from './tabs';
+import introduction from './intro';
+import menuitems from './menu';
+import contactUs from './contact';
 
-let contentdiv = document.getElementById("content");
+const contentdiv = document.getElementById('content');
 
-//Creating the Tabs
-let tabsdiv = document.createElement("div");
-tabsdiv.setAttribute("id","tab");
+// Creating the Tabs
+const tabsdiv = document.createElement('div');
+tabsdiv.setAttribute('id', 'tab');
 
-//Creating the Container 
-let containerdiv = document.createElement("div");
-containerdiv.setAttribute("id","container");
+// Creating the Container
+const containerdiv = document.createElement('div');
+containerdiv.setAttribute('id', 'container');
 
-//Adding buttons to tab
-let btns = tabsButton();
-    
-  for(let i=0; i < 3; i++){
-      tabsdiv.appendChild(btns[i]);
-  }
+// Adding buttons to tab
+const btns = tabsButton();
 
-//Adding tabs and container div to content div
+for (let i = 0; i < 3; i += 1) {
+  tabsdiv.appendChild(btns[i]);
+}
+
+// Adding tabs and container div to content div
 contentdiv.appendChild(tabsdiv);
 contentdiv.appendChild(containerdiv);
 
-//Adding intro to content div
-let introdiv = introduction();  
+function setstyle(btn) {
+  btn.style.backgroundColor = 'black';
+  btn.style.color = 'white';
+}
+
+// Adding intro to content div
+const introdiv = introduction();
 containerdiv.appendChild(introdiv);
 setstyle(btns[0]);
 
-function resetstyle(btnindex){
-    
-    for(let i=0; i<btns.length; i++){
-      if (i != btnindex)
-      {
-        btns[i].style.backgroundColor="white";
-        btns[i].style.color="black";
-      }
-      
+function resetstyle(btnindex) {
+  for (let i = 0; i < btns.length; i += 1) {
+    if (i !== btnindex) {
+      btns[i].style.backgroundColor = 'white';
+      btns[i].style.color = 'black';
     }
-    
+  }
 }
 
-function setstyle(btn){
-    btn.style.backgroundColor="black";
-    btn.style.color="white";
-}
-
-//intro button
-btns[0].addEventListener("click", function(){
-    containerdiv.innerHTML="";
-    containerdiv.appendChild(introdiv);
-    setstyle(btns[0]);
-    resetstyle(0);
-    
+// intro button
+btns[0].addEventListener('click', () => {
+  containerdiv.innerHTML = '';
+  containerdiv.appendChild(introdiv);
+  setstyle(btns[0]);
+  resetstyle(0);
 });
 
-//menu button
- btns[1].addEventListener("click", function(){
-  containerdiv.innerHTML="";
-  let menu = menuitems();
+// menu button
+btns[1].addEventListener('click', () => {
+  containerdiv.innerHTML = '';
+  const menu = menuitems();
   containerdiv.appendChild(menu);
-    setstyle(btns[1]);
-    resetstyle(1);
+  setstyle(btns[1]);
+  resetstyle(1);
 });
 
-//contact button
-  btns[2].addEventListener("click", function(){
-    containerdiv.innerHTML="";
-    let cntct = contactUs();
-    containerdiv.appendChild(cntct);
-    setstyle(btns[2]);
-    resetstyle(2);
-    
+// contact button
+btns[2].addEventListener('click', () => {
+  containerdiv.innerHTML = '';
+  const cntct = contactUs();
+  containerdiv.appendChild(cntct);
+  setstyle(btns[2]);
+  resetstyle(2);
 });
-

@@ -1,15 +1,15 @@
-# Restaurant [Live Link](https://replit.com/@saimaAnis21/Library)
+# Restaurant
 
 A ![](https://img.shields.io/badge/Microverse-blueviolet) project for Javascript Module
 
 A website where you can: 
 1- Switch between different tabs
-2- Each tab displays a different information
-3- The tabs display the introduction, menu and contact for the restaurant
+2- Each tab displays a different information about the restaurant
+3- The tabs display the introduction, menu and contact info for the restaurant
 
 ## Built With
 
-- Java Script
+- JavaScript
 - HTML
 - CSS
 - webpack
@@ -18,9 +18,9 @@ A website where you can:
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone this project by typing ```git clone git@github.com:saimaAnis21/Library.git```
-- cd into Library
-- Run git pull origin library
+- Clone this project by typing ```git clone git@github.com:saimaAnis21/restaurant.git```
+- cd into restaurant
+- Run git pull origin main
 
 
 ## Author
