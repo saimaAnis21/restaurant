@@ -11,7 +11,7 @@ A website where you can:
 
 - JavaScript
 - HTML
-- CSS
+- CSS3
 - webpack
 
 ## Getting Started
@@ -31,6 +31,9 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@SheTALKS](https://twitter.com/SheTALKS6)
 - LinkedIn: [Saima Anis](https://www.linkedin.com/in/saima-anis-3a07921b2/)
 
+## Acknowledgements
+- Microverse
+- The Odin Project
 
 ## 🤝 Contributing
 
