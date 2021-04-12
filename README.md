@@ -21,6 +21,13 @@ To get a local copy up and running follow these simple example steps.
 - Clone this project by typing ```git clone git@github.com:saimaAnis21/restaurant.git```
 - cd into restaurant
 - Run git pull origin main
+If you want to repack the file
+- Run npm install on the terminal to install dependancies
+- Run npm run build to pack the files in the src folder
+- Go to the dist folder and open index.html
+- Run npm run start to open it on a live server
+Else
+- Just Go to the dist folder and open index.html
 
 
 ## Author
